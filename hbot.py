@@ -18,6 +18,7 @@ import pandas as pd
 
 from create_db import *
 from methods import *
+from config import token, url, usr, pssw
 
 # sql = SQLiteAdapter3000()
 
@@ -86,12 +87,12 @@ def text(bot, update):
                          text='пока эта фича недоступна')
 
 if __name__ == '__main__':
-    TOKEN = '1018670870:AAFd8rPaku2PQBRIJxNsMf6u89Q2nm1xCKU'
+    TOKEN = token
     REQUEST_KWARGS={
-        'proxy_url': 'socks5h://s5.priv.opennetwork.cc:1080',
+        'proxy_url': url,
         'urllib3_proxy_kwargs': {
-            'username': 'SX1_62016058',
-            'password': 'ZckuNd6nX7TkvrgL',
+            'username': usr,
+            'password': pssw,
         }
     }
     updater = Updater(TOKEN, request_kwargs=REQUEST_KWARGS)
