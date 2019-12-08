@@ -3,9 +3,11 @@ Telegram bot that helps to keep track of what hurts you and displays interesting
 All data is stored in sqlite.
 
 Instruction:
-        git clone <path>
-        cd health_bot
-        touch records.db
-        python3 create_db.py
-        tmux new
-        python3 hbot.py
+```
+git clone <path>
+cd health_bot
+touch records.db
+python3 create_db.py
+tmux new
+python3 hbot.py
+```
